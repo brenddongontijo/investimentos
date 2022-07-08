@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  notebooks:
+    build:
+      context: .
+      dockerfile: ./docker/notebooks.Dockerfile
+    env_file:
+      - docker/notebooks.env
+    volumes:
+      - ./notebooks:/work/notebooks
+    ports:
+      - 8888:8888
