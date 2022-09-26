@@ -1,6 +1,7 @@
 FROM jupyter/scipy-notebook
 
-WORKDIR /work/
+COPY . /work
+WORKDIR /work
 
 RUN pip3 install lxml
 
