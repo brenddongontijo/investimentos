@@ -5,7 +5,7 @@ services:
   notebooks:
     build:
       context: .
-      dockerfile: ./docker/notebooks.Dockerfile
+      dockerfile: ./docker/Dockerfile
     env_file:
       - docker/notebooks.env
     volumes:
